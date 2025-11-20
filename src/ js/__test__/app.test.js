@@ -1,4 +1,4 @@
-import ErrorRepository from '../app';
+import ErrorRepository from "../app";
 
 test("getExistsError", () => {
   const errorRepository = new ErrorRepository();
@@ -7,5 +7,5 @@ test("getExistsError", () => {
 
 test("getNoExistsError", () => {
   const errorRepository = new ErrorRepository();
-  expect(() => errorRepository.translate(3)).toThrow();
+  expect(() => errorRepository.translate(3)).toThrow("Unknown error");
 });
