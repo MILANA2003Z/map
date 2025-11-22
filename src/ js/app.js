@@ -1,7 +1,7 @@
-export default class ErrorRepository {
+export class ErrorRepository {
   constructor() {
     this.errors = new Map([
-      [1, "Error1"],
+      [1, "Error1"]
     ]);
   }
 
@@ -13,3 +13,5 @@ export default class ErrorRepository {
     return this.errors.get(code);
   }
 }
+
+export default ErrorRepository;
