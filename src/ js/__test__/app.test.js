@@ -1,4 +1,4 @@
-import ErrorRepository from "../app";
+import ErrorRepository from "../app.js";
 
 test("getExistsError", () => {
   const errorRepository = new ErrorRepository();
